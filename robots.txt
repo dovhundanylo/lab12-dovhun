@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dovhundanylo.github.io/lab12-dovhun/sitemap.xml
