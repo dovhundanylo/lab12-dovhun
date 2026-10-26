@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Заявка на участь в навчальному проєкті з КМ">
+    <meta name="author" content="Данило Довгун">
+    <title>Заявка на участь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="site-title">Комп'ютерні мережі та протоколи</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Сторінка порівняння</a></li>
+            <li><a href="gallery.html">Медіагалерея</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html" class="active" aria-current="page">Заявка на участь у навчальному проєкті</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+    <main class="container">
+        <h1><strong>Заявка на участь в навчальному проєкті з Комп'ютерних мереж</strong></h1>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend><strong>Відомості про учасника</strong></legend>
+                <label for="fullname">Прізвище та ім'я</label>
+                <input type="text" id="fullname" name="fullname" minlength="5" maxlength="100" autocomplete="name" required>
+                <br><br>
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <br><br>
+                <label for="tel">Телефон</label>
+                <input type="tel" id="tel" name="tel" value="+38" pattern="\+380[0-9]{9}" title="Формат: +380956694364" autocomplete="tel" required>
+                <br><br>
+                <label for="course">Курс навчання</label>
+                <input type="number" id="course" name="course" min="1" max="4" step="1" required>
+                <br><br>
+                <label for="date">Дата початку участі</label>
+                <input type="date" id="date" name="date" min="2026-10-03" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Рівень підготовки</strong></legend>
+                <div class="checkbox">
+                <input type="radio" name="level" value="beginner" checked>
+                <label>Початківець</label>
+                </div>
+                <div class="checkbox">
+                <input type="radio" name="level" value="middle">
+                <label>Середнячок</label>
+                </div>
+                <div class="checkbox">
+                <input type="radio" name="level" value="professional">
+                <label>Професіонал</label>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Параметри проєкту</strong></legend>
+                <fieldset>
+                    <legend>Напрями інтересу</legend>
+                    <div class="checkbox">
+                    <input type="checkbox" name="field" value="network security">
+                    <label>Кібербезпека та захист мережевої інфраструктури</label>
+                    </div>
+                    <div class="checkbox">
+                    <input type="checkbox" name="field" value="network automation & sdn">
+                    <label>Автоматизація та програмно-конфігуровані мережі</label>
+                    </div>
+                    <div class="checkbox">
+                    <input type="checkbox" name="field" value="cloud networking & nfv">
+                    <label>Хмарні мережі та віртуалізація</label>
+                    </div>
+                    <div class="checkbox">
+                    <input type="checkbox" name="field" value="wireless & iot">
+                    <label>Архітектура бездротових мереж та Інтернет речей</label>
+                    </div>
+                    <div class="checkbox">
+                    <input type="checkbox" name="field" value="routing & qos">
+                    <label>Динамічна маршрутизація та оптимізація продуктивності</label>
+                    </div>
+                </fieldset>
+                <br>
+                <label for="stack">Технологічний стек</label>
+                <select id="stack" name="stack">
+                    <optgroup label="Апаратні платформи та OS">
+                        <option value="cisco">Cisco (IOS/IOS-XE)</option>
+                        <option value="juniper">Juniper (Junos OS)</option>
+                        <option value="mikrotik">MikroTik (RouterOS)</option>
+                    </optgroup>
+                    <optgroup label="Мови програмування">
+                        <option value="python">Python</option>
+                        <option value="bash">Bash</option>
+                        <option value="go">Go</option>
+                    </optgroup>
+                    <optgroup label="Хмарні мережеві платформи">
+                        <option value="aws vpc">AWS VPC (Virtual Private Cloud)</option>
+                        <option value="microsoft azure vnet">Microsoft Azure VNet</option>
+                        <option value="docket networking">Docket Networking</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Додаткові дані</strong></legend>
+                <label for="experience">Короткий опис досвіду</label><br>
+                <textarea id="experience" name="experience" rows="5" minlength="20" maxlength="500" placeholder="Розкажіть про свій досвід у комп'ютерних мережах" required></textarea>
+                <br><br>
+                <label for="portfolio">Файл з портфоліо (необов'язково)</label><br>
+                <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx">
+            </fieldset>
+            <br>
+            <button type="submit">Надіслати заявку</button>
+            <button type="reset">Очистити форму</button>
+            <button type="button" id="preview-btn">Попередній перегляд</button>
+            <div class="media">
+                <img src="img/icon.svg" alt="" class="media__icon">
+                <p class="media__body">Поля, позначені зірочкою, обов'язкові для заповнення</p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

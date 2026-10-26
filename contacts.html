@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакти">
+    <meta name="author" content="Данило Довгун">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="site-title">Комп'ютерні мережі та протоколи</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Сторінка порівняння</a></li>
+            <li><a href="gallery.html">Медіагалерея</a></li>
+            <li><a href="contacts.html" class="active" aria-current="page">Контакти</a></li>
+            <li><a href="application.html">Заявка на участь у навчальному проєкті</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+    <main class="container">
+    <fieldset>
+    <legend><h1><strong>Зворотний зв'язок</strong></h1></legend>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="subject">Тема звернення</label>
+        <select id="subject" name="subject">
+            <option value="question">Запитання</option>
+            <option value="suggestion">Пропозиція</option>
+            <option value="error">Повідомлення про помилку на сайті</option>
+        </select>
+        <br><br>
+        <label for="message">Текст повідомлення</label><br>
+        <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+        <br><br>
+        <div class="checkbox">
+        <input type="checkbox" name="consent" required>
+        <label for="consent">Погождуюсь на обробку персональних даних</label>
+        </div>
+        <br><br>
+        <button type="submit">Надіслати</button>
+    </form>
+    </fieldset>
+    </main>
+    <hr>
+    <footer>
+    <address>
+        Довгун Данило, група КН22Б<br>
+        <a href="mailto:dovhundovhundovhun@gmail.com">dovhundovhundovhun@gmail.com</a><br>
+        <a href="tel:+380958826547">+38 (095) 882 65 47</a>
+    </address>
+    <p>&copy; 2026 Довгун Данило</p>
+    </footer>
+</body>
+</html>

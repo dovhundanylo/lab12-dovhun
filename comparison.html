@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сторінка порівняння з таблицею">
+    <meta name="author" content="Данило Довгун">
+    <title>Сторінка порівняння</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="site-title">Комп'ютерні мережі та протоколи</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html" class="active" aria-current="page">Сторінка порівняння</a></li>
+            <li><a href="gallery.html">Медіагалерея</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html">Заявка на участь у навчальному проєкті</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+    <main class="container">
+    <h1><strong>Фундаментальні принципи організації комп'ютерних мереж</strong></h1>
+    <table>
+        <caption>Основні мережеві протоколи та їх роль у моделі OSI</caption>
+        <thead>
+            <tr>
+                <th scope="col">Назва протоколу</th>
+                <th scope="col">Рівень моделі OSI</th>
+                <th scope="col">Основне призначення</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">HTTP/HTTPS</th>
+                <td>Прикладний (Application)</td>
+                <td>Передача гіпертекстових документів (веб-сторінок) та забезпечення безпечного обміну даними в інтернеті.</td>
+            </tr>
+            <tr>
+                <th scope="row">TCP</th>
+                <td>Транспортний (Transport)</td>
+                <td>Забезпечення надійної передачі даних між вузлами зі попереднім встановленням з'єднання та контролем цілісності.</td>
+            </tr>
+            <tr>
+                <th scope="row">IP (IPv4/IPv6)</th>
+                <td>Мережевий (Network)</td>
+                <td>Маршрутизація пакетів даних між різними мережами та логічна адресація пристроїв.</td>
+            </tr>
+            <tr>
+                <th scope="row">Ethernet</th>
+                <td>Канальний (Data Link)</td>
+                <td>Передача кадрів даних та фізична адресація (за допомогою MAC-адрес) у межах локальної мережі (LAN).</td>
+            </tr>
+            <tr>
+                <th scope="row">DNS</th>
+                <td>Прикладний (Application)</td>
+                <td>Дозволяє системі доменних імен перетворювати зручні для читання адреси (наприклад, example.com) у числові IP-адреси.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Усього розглянуто 5 мережевих протоколів</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2><strong>Технології обміну даними та мережева інфраструктура</strong></h2>
+    <table>
+        <caption>Ключові прикладні та службові протоколи: стандартні порти та їх призначення</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Протокол</th>
+                <th colspan="2" scope="colgroup">Характеристики</th>
+            </tr>
+            <tr>
+                <th scope="col">Стандартний порт</th>
+                <th scope="col">Основне призначення</th>
+            </tr>  
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">SMTP</th>
+                <td>25, 465, 587</td>
+                <td>Відправлення електронної пошти між поштовими серверами.</td>
+            </tr>
+            <tr>
+                <th scope="row">IMAP</th>
+                <td>143, 993</td>
+                <td>Читання та управління електронною поштою безпосередньо на сервері.</td>
+            </tr>
+            <tr>
+                <th scope="row">FTP</th>
+                <td>20, 21</td>
+                <td>Передача файлів між клієнтом та сервером у комп'ютерних мережах.</td>
+            </tr>
+            <tr>
+                <th scope="row">DHCP</th>
+                <td>67, 68</td>
+                <td>Автоматичне призначення IP-адрес та параметрів конфігурації мережі.</td>
+            </tr>
+            <tr>
+                <th scope="row">ICMP</th>
+                <td>Не застосовується (L3)</td>
+                <td>Діагностика з'єднань (напр., утиліта ping) та повідомлення про помилки.</td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <hr>
+    <footer>
+    <address>
+        Довгун Данило, група КН22Б<br>
+        <a href="mailto:dovhundovhundovhun@gmail.com">dovhundovhundovhun@gmail.com</a><br>
+        <a href="tel:+380958826547">+38 (095) 882 65 47</a>
+    </address>
+    <p>&copy; 2026 Довгун Данило</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Комп'ютерні мережі: поняття, модель, структура та специфікація">
+    <meta name="author" content="Данило Довгун">
+    <title>Про напрям</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<a href="#top" class="back-to-top">Нагору</a>
+<body class="page" id="top">
+    <header class="page__header">
+        <a href="index.html" class="site-title">Комп'ютерні мережі та протоколи</a>
+            <nav>
+            <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html" class="active" aria-current="page">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Сторінка порівняння</a></li>
+            <li><a href="gallery.html">Медіагалерея</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html">Заявка на участь у навчальному проєкті</a></li>
+        </ul>
+        </nav>
+    </header>
+    <aside class="page__sidebar">
+    <h2>Навігація</h2>
+    <nav>
+    <ul>
+        <li><a href="#first">Поняття та класифікація комп'ютерних мереж</a></li>
+        <li><a href="#second">Еталонна модель взаємодії відкритих систем (OSI)</a></li>
+        <li><a href="#third">Архітектура стека протоколів TCP/IP</a></li>
+        <li><a href="#fourth">Специфікація основних мережевих протоколів</a></li>
+        <li><a href="#fifth">Новини в галузі</a></li>
+    </ul>
+    </nav>
+    </aside>
+    <main class="container page__main">
+    <h1><strong>Про напрям</strong></h1>
+    <blockquote>"Хто відсутній в Інтернеті - не існує", - Білл Гейтс</blockquote>
+    <br>
+    <section class="card" id="first">
+        <span class="badge">Поняття та класифікація</span>
+        <h2><strong>Поняття та класифікація комп'ютерних мереж</strong></h2>
+        <p><b>Комп'ютерна мережа</b> визначається як сукупність територіально розосереджених апаратно-програмних комплексів, що об'єднані каналами зв'язку для забезпечення обміну даними та спільного доступу до обчислювальних ресурсів. Залежно від масштабу та територіального охоплення, мережі класифікуються на локальні (Local Area Network, LAN), міські (Metropolitan Area Network, MAN) та глобальні (Wide Area Network, WAN).</p>
+        <p><a class="btn" href="#top">Нагору</a></p>
+    </section>
+    <section class="card featured" id="second">
+        <span class="badge">Модель взаємодії</span>
+        <h2><strong>Еталонна модель взаємодії відкритих систем (OSI)</strong></h2>
+        <p>Модель OSI (Open Systems Interconnection) — це абстрактна мережева модель, стандартизована Міжнародною організацією зі стандартизації (Джерело: базовий стандарт ISO/IEC 7498-1). Модель декомпозує процес телекомунікаційної взаємодії на сім ієрархічних рівнів:</p>
+        <ol>
+            <li>Прикладний (Application)</li>
+            <li>Представлення (Presentation)</li>
+            <li>Сеансовий (Session)</li>
+            <li>Транспортний (Transport)</li>
+            <li>Мережевий (Network)</li>
+            <li>Канальний (Data Link)</li>
+            <li>Фізичний (Physical)</li>
+        </ol>
+        <p>Кожен рівень інкапсулює специфічний набір функцій і взаємодіє виключно із суміжними рівнями через стандартизовані інтерфейси.</p>
+        <p><a class="btn" href="#top">Нагору</a></p>
+    </section>
+    <section class="card" id="third">
+        <span class="badge">Стек протоколів</span>
+        <h2><strong>Архітектура стека протоколів TCP/IP</strong></h2>
+        <p>Стек TCP/IP є базовою практичною архітектурою передачі даних, яка лежить в основі функціонування глобальної мережі Інтернет (Джерело: специфікація IETF RFC 1122). На відміну від семирівневої моделі OSI, архітектура стека TCP/IP включає чотири рівні: прикладний, транспортний, міжмережевий та рівень доступу до середовища (мережевий інтерфейс).</p>
+        <p>Приклад використання команд стеку TCP/IP:<br>
+        <code>ping google.com</code><br>
+        Результатом виконання команду буде час відгуку та втрати пакетів.</p>
+        <p><a class="btn" href="#top">Нагору</a></p>
+    </section>
+    <section class="card featured" id="fourth">
+        <span class="badge">Специфікація протоколів</span>
+        <h2><strong>Специфікація основних мережевих протоколів</strong></h2>
+        <p>Мережевий протокол — це формалізований набір семантичних і синтаксичних правил, що регламентують послідовність обміну інформацією між компонентами мережі. До ключових протоколів належать:</p>
+        <dl>
+            <dt>IP (Internet Protocol):</dt><dd> протокол міжмережевого рівня, який забезпечує глобальну логічну адресацію та незв'язну маршрутизацію пакетів (дейтаграм).</dd>
+            <dt>TCP (Transmission Control Protocol) та UDP (User Datagram Protocol):</dt><dd> протоколи транспортного рівня. TCP гарантує надійну доставку даних зі встановленням логічного з'єднання, тоді як UDP забезпечує трансляцію дейтаграм без підтвердження доставки (мінімізація затримок).</dd>
+            <dt>HTTP/HTTPS (Hypertext Transfer Protocol / Secure):</dt><dd> протоколи прикладного рівня, призначені для передачі гіпертекстових документів.</dd>
+            <dt>DNS (Domain Name System):</dt><dd> ієрархічна розподілена система, що здійснює трансляцію символьних доменних імен у відповідні числові IP-адреси.</dd>
+        </dl>
+        <p><a class="btn" href="#top">Нагору</a></p>
+    </section>
+    <article class="art" id="fifth">
+        <span class="badge arti">Новини</span>
+        <h3>NIST офіційно затвердив перші стандарти постквантової криптографії</h3>
+        <p>13 серпня 2024 року Національний інститут стандартів і технологій США (NIST) офіційно затвердив і випустив перші три стандарти постквантової криптографії: FIPS 203, FIPS 204 та FIPS 205. Ці алгоритми розроблені для безпечного обміну криптографічними ключами та створення надійних цифрових підписів у комп'ютерних мережах, щоб захистити цифрову інфраструктуру від розшифрування майбутніми квантовими комп'ютерами.</p>
+        <p><a class="btn arti" href="#top">Нагору</a></p>
+    </article>
+    <aside class="art featured">
+        <h3>Дивіться також:</h3>
+        <p>08.01.2024: Старт офіційної програми сертифікації пристроїв Wi-Fi 7 (802.11be) від Wi-Fi Alliance задля... <a href="https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-certified-7" rel="noopener">Читати далі</a></p>
+        <p>19.03.2025: Створення інститутом IEEE робочої групи з розробки стандарту Wi-Fi 8 (802.11bn) із фокусом на... <a href="https://www.ieee802.org/11/" rel="noopener">Читати далі</a></p>
+        <p>24.05.2026: Завершення перших польових випробувань інтерконектів Ethernet на швидкості 1.6 Tb/s консорціумом... <a href="https://ethernetalliance.org/technology/ethernet-roadmap/" rel="noopener">Читати далі</a></p>
+        <p>02.09.2026: Публікація оновленої чернетки IETF щодо посилення криптографічної безпеки протоколу маршрутизації BGP проти... <a href="https://datatracker.ietf.org/" rel="noopener">Читати далі</a></p>
+        <p><a class="btn arti" href="#top">Нагору</a></p>
+    </aside>
+    <hr>
+    </main>
+    <footer class="page__footer">
+    <address>
+        Довгун Данило, група КН22Б<br>
+        <a href="mailto:dovhundovhundovhun@gmail.com">dovhundovhundovhun@gmail.com</a><br>
+        <a href="tel:+380958826547">+38 (095) 882 65 47</a>
+    </address>
+    <p>&copy; 2026 Довгун Данило</p>
+    </footer>
+</body>
+</html>
